@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Poppins, sans-serif, Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #6e06f2;
+  --background-color: #ffffff;
+  --text-color-primary: #24262f;
+  --text-color-secondary: #424556;
+
+  --image-space-color: #424556;
+
+  --background-color: #24262f;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+// dark-theme
+
+.dark-theme {
+  --background-color: #24262f;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #ffffff;
+}

@@ -1,0 +1,207 @@
+<main class="home-main">
+  <section class="hero-section">
+    <div class="hero-section__child-1">
+      <h1 class="greeting">Hey, I'm Akhilesh 👋🏻</h1>
+      <h1 class="designation"><span>Front</span>end Developer</h1>
+      <h1 class="description">
+        I'm a frontend developer based in India, I'll help you build beautiful
+        websites your users will love.
+      </h1>
+      <div class="button-container">
+        <a class="contact-button" href="/contact">Get In Touch</a>
+        <a class="projects-button" href="/projects">Browse Projects</a>
+      </div>
+    </div>
+    <div class="hero-section__child-2">
+      <div class="outer-circle">
+        <img src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section">
+    <h2 class="title">Projects<span>.</span></h2>
+    <div class="projects-container">
+      <a aria-label="Project-1" class="project-1" routerLink="#">
+        <div class="img-space"></div>
+        <h4 aria-hidden="true">Project-1</h4>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor
+        </div>
+      </a>
+      <a aria-label="Project-2" class="project-2" routerLink="#">
+        <div class="img-space"></div>
+        <h4 aria-hidden="true">Project-2</h4>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor
+        </div>
+      </a>
+      <a aria-label="Project-3" class="project-3" routerLink="#">
+        <div class="img-space"></div>
+        <h4 aria-hidden="true">Project-3</h4>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor
+        </div>
+      </a>
+      <a aria-label="Project-4" class="project-4" routerLink="#">
+        <div class="img-space"></div>
+        <h4 aria-hidden="true">Project-4</h4>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <h2 class="title">Experience<span>.</span></h2>
+    <div class="experience-container">
+      <div class="experience-company">
+        <div
+          class="company-container"
+          [ngClass]="{ active: isToggle }"
+          (click)="onClick()"
+        >
+          <div class="company-tag"></div>
+          <div class="company-name">TCS</div>
+        </div>
+        <div
+          class="company-container"
+          [ngClass]="{ active: !isToggle }"
+          (click)="onClick()"
+        >
+          <div class="company-tag"></div>
+          <div class="company-name">TCS</div>
+        </div>
+      </div>
+      <div class="experience-details">
+        @if (isToggle) {
+        <div class="details-container">
+          <div class="role-title">
+            Frontend Developer <span> &#64; TCS</span>
+          </div>
+          <div class="time">Aug 2020 - Present</div>
+          <div class="points">
+            <ul>
+              <li>
+                <span>&#10003;</span>
+                Developed and shipped highly interactive web applications for
+                Apple Music using Ember.js.
+              </li>
+              <li>
+                <span>&#10003;</span>
+                Built and shipped the Apple Music Extension within Facebook
+                Messenger leveraging third-party and internal APIs.
+              </li>
+              <li>
+                <span>&#10003;</span>
+                Contributed extensively to MusicKit.js, a JavaScript framework
+                that allows developers to add an Apple Music player to their web
+                apps.
+              </li>
+            </ul>
+          </div>
+        </div>
+        } @else {
+        <div class="details-container">
+          <div class="role-title">
+            Full stack developer <span> &#64; TCS</span>
+          </div>
+          <div class="time">July 2018 - 2020</div>
+          <div class="points">
+            <ul>
+              <li>
+                <span>&#10003;</span>
+                Worked with a team to build a marketing website and e-commerce
+                platform.
+              </li>
+              <li>
+                <span>&#10003;</span>
+                Helped solidify a brand direction for blistabloc that spans both
+                packaging and web.
+              </li>
+              <li>
+                <span>&#10003;</span>
+                Interfaced with clients on a weekly basis, providing
+                technological expertise.
+              </li>
+            </ul>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section">
+    <h2 class="title">Skills<span>.</span></h2>
+    <div class="skills-container">
+      <div>
+        <h3 class="skill-title">Web Design</h3>
+        <ul>
+          <li>UI/UX</li>
+          <li>Responsive design</li>
+          <li>Wireframing</li>
+          <li>User research</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="skill-title">Web Design</h3>
+        <ul>
+          <li>UI/UX</li>
+          <li>Responsive design</li>
+          <li>Wireframing</li>
+          <li>User research</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="skill-title">Web Design</h3>
+        <ul>
+          <li>UI/UX</li>
+          <li>Responsive design</li>
+          <li>Wireframing</li>
+          <li>User research</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="skill-title">Web Design</h3>
+        <ul>
+          <li>UI/UX</li>
+          <li>Responsive design</li>
+          <li>Wireframing</li>
+          <li>User research</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-story-section">
+    <h2 class="title">My story<span>.</span></h2>
+    <p>
+      My journey as a front-end developer started back in 2010, working as
+      a<span>freelancer</span> for clients all over the world for several years.
+    </p>
+    <p>
+      After being on my own for a while, I decided to enter the corporate world,
+      and I started working as a software developer at <span>Webflow</span>, the
+      same platform I was using with my freelance clients.
+    </p>
+    <p>
+      After some exciting months of work at Webflow, I decided to transition to
+      <span>Stripe</span>, where I returned what I love: front-end development.
+    </p>
+    <p>
+      My <span>success</span> quickly compounded I started receiving job offers
+      from the biggest names in the industry.
+    </p>
+    <p>
+      All these opportunities led me to travel the world. Eventually, however, I
+      decided to settle down for a more calm and simple routine, and I'm now
+      working at Apple. And you know what? I love what I do! 💜
+    </p>
+  </section>
+</main>

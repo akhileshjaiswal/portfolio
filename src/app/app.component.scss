@@ -1,0 +1,217 @@
+.app-main {
+  padding: 0 40px;
+  @media only screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    padding: 16px 0;
+    margin: 0 auto;
+
+    .logo {
+      text-decoration: none;
+      color: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      color: var(--text-color-primary);
+
+      &__dot {
+        color: var(--primary-color);
+        font-size: 22px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      width: 240px;
+      justify-content: space-between;
+      align-items: center;
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
+
+      li a {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        text-decoration: none;
+        color: inherit;
+        color: var(--text-color-secondary);
+
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        &.active {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .contact {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: var(--text-color-primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .menu {
+      height: 35px;
+      width: 35px;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      @media only screen and (max-width: 800px) {
+        display: flex;
+      }
+
+      &__bar {
+        width: 20px;
+        background-color: var(--text-color-primary);
+        height: 2px;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+      }
+
+      &.rotate {
+        gap: 0;
+        .bar-1 {
+          transform: rotate(45deg);
+          margin-top: -2px;
+        }
+        .bar-2 {
+          margin-top: -2px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .overlay {
+    ul {
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      @media only screen and (max-width: 800px) {
+        display: flex;
+      }
+
+      li a {
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        text-decoration: none;
+        color: inherit;
+        color: var(--text-color-secondary);
+        &.active {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    ul.nav-link-list {
+      list-style: none;
+      display: flex;
+      width: 320px;
+      justify-content: space-between;
+      align-items: center;
+
+      li a {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        text-decoration: none;
+        color: inherit;
+        color: var(--text-color-secondary);
+
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        &.active {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .social-links {
+      ul.social-links__list {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+      }
+    }
+  }
+
+  .bottom-question {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+
+    .button-container {
+      margin-top: 24px;
+      .contact-button {
+        background-color: var(--primary-color);
+        color: whitesmoke;
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .projects-button {
+        border: 1px solid var(--text-color-primary);
+        color: var(--text-color-primary);
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 16px;
+      }
+    }
+
+    .legal-text {
+      text-align: right;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 300;
+      color: var(--text-color-secondary);
+    }
+  }
+}
