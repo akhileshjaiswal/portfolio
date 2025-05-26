@@ -10,7 +10,15 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   public isRotate = false;
+
   toggleRotate() {
     this.isRotate = !this.isRotate;
+  }
+
+  toggleTheme() {
+    const ele = document.querySelector('.theme-toggle');
+    const body = document.querySelector('body');
+    ele?.classList.toggle('theme-toggle--toggled');
+    body?.classList.toggle('dark-theme');
   }
 }
