@@ -24,3 +24,10 @@ body {
   --text-color-primary: #ffffff;
   --text-color-secondary: #ffffff;
 }
+
+.section-spacing {
+  margin: 150px 0;
+  @media screen and (max-width: 800px) {
+    margin: 75px 0;
+  }
+}

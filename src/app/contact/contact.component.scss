@@ -55,6 +55,9 @@ main {
           display: flex;
           align-items: center;
           margin-bottom: 16px;
+          @media screen and (max-width: 800px) {
+            gap: 12px;
+          }
 
           .icon {
             height: 24px;
@@ -102,12 +105,5 @@ main {
         }
       }
     }
-  }
-}
-
-.section-spacing {
-  margin: 150px 0;
-  @media screen and (max-width: 800px) {
-    margin: 75px 0;
   }
 }

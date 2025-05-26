@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 75px 0;
 
     @media screen and (max-width: 1200px) {
       flex-direction: column;
@@ -301,12 +302,5 @@
   }
   @media screen and (max-width: 800px) {
     font-size: 44px;
-  }
-}
-
-.section-spacing {
-  margin: 150px 0;
-  @media screen and (max-width: 800px) {
-    margin: 75px 0;
   }
 }
