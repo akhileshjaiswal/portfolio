@@ -2,9 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Portfolio</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO Meta -->
+    <title>Akhilesh Jaiswal | Frontend Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Explore the portfolio of Akhilesh Jaiswal, a frontend developer skilled in Angular, JavaScript, and responsive design. Showcasing real-world projects and UI creativity."
+    />
+    <meta
+      name="keywords"
+      content="Akhilesh Jaiswal, Angular Developer, Frontend Portfolio, Web Developer, JavaScript Projects, GitHub Portfolio, Responsive Web Design"
+    />
+    <meta name="author" content="Akhilesh Jaiswal" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Akhilesh Jaiswal | Frontend Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Showcasing web projects built using Angular and JavaScript. Explore my work and skills."
+    />
+    <meta
+      property="og:url"
+      content="https://akhileshjaiswal.github.io/portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://akhileshjaiswal.github.io/portfolio/profile.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Akhilesh Jaiswal | Frontend Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Angular and JavaScript projects built by Akhilesh Jaiswal. Clean UI, responsive design, and GitHub integration."
+    />
+    <meta
+      name="twitter:image"
+      content="https://akhileshjaiswal.github.io/portfolio/profile.jpg"
+    />
+
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,4 +66,18 @@
   <body>
     <app-root></app-root>
   </body>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2DB7DCL3QK"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-2DB7DCL3QK");
+  </script>
 </html>

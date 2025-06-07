@@ -1,5 +1,5 @@
-import { NgClass } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { isPlatformBrowser, NgClass } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import {
   Router,
   RouterLink,
@@ -7,7 +7,9 @@ import {
   RouterOutlet,
   Event,
   NavigationStart,
+  NavigationEnd,
 } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,18 @@ import {
 export class AppComponent implements OnInit {
   public isRotate = false;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    if (isPlatformBrowser(platformId)) {
+      this.router.events
+        .pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe(() => {
+          window.scrollTo({ top: 0, behavior: 'auto' }); // or 'smooth'
+        });
+    }
+  }
 
   ngOnInit(): void {
     this.router.events.subscribe((event: Event) => {

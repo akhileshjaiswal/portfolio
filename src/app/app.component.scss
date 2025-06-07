@@ -28,7 +28,8 @@
     ul {
       list-style: none;
       display: flex;
-      width: 240px;
+      gap: 20px;
+      // width: 240px;
       justify-content: space-between;
       align-items: center;
       @media only screen and (max-width: 800px) {
